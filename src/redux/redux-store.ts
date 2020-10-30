@@ -19,6 +19,7 @@ let rootReducers = combineReducers({
 });
 
 type RootReducersType = typeof rootReducers;
+//Глобальный стейт
 export type AppStateType = ReturnType<RootReducersType>
 //@ts-ignore
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
